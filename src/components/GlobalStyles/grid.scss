@@ -1,0 +1,39 @@
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+@mixin divideColumns($type) {
+  .col-#{$type}-0 {
+    display: none;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$type}-#{$i} {
+      padding: 0 10px;
+      width: #{(100 / 12) * $i}#{"%"};
+    }
+  }
+}
+
+// mobile
+@media (max-width: 739px) {
+  @include divideColumns(s);
+}
+
+// tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  @include divideColumns(m);
+}
+
+//pc
+@media (min-width: 1024px) {
+  @include divideColumns(l);
+}

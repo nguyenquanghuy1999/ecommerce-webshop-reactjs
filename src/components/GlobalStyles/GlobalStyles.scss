@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-color: #eb3e32;
+  --text-color: #323c42;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #323c42;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 739px) {
+  div#tippy-1 {
+    width: 95% !important;
+    transform: translate3d(10px, 98px, 0px) !important;
+  }
+}
+
+@import "grid.scss";

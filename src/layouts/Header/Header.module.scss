@@ -1,0 +1,174 @@
+.wrapper {
+  height: 123px;
+  background-color: #fff;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+.logo-link {
+  .logo {
+    max-width: 150px;
+    height: 50px;
+  }
+}
+
+.search-icon {
+  display: none;
+}
+
+.phone-wrap {
+  display: flex;
+}
+
+.phone-icon {
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+.phone {
+  margin-left: 6px;
+}
+
+.phone-text,
+.acount-text {
+  font-size: 1.4rem;
+  color: #323c42;
+  display: block;
+}
+
+.phone-number {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.user-account {
+  display: flex;
+}
+
+.account {
+  margin-left: 6px;
+}
+
+.user-img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.login,
+.username {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.user-option {
+  list-style: none;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  .user-option-item {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .inner {
+    width: 90%;
+    margin: auto;
+  }
+
+  .phone-text,
+  .phone-number,
+  .acount-text,
+  .login,
+  .username {
+    display: none;
+  }
+}
+
+@media (max-width: 739px) {
+  .wrapper {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 59px;
+  }
+
+  .inner {
+    width: 95%;
+  }
+
+  .logo-link {
+    flex: 1;
+    text-align: center;
+    margin-left: 85px;
+
+    .logo {
+      width: 100%;
+      height: 41px;
+      object-fit: contain;
+    }
+  }
+
+  .logo-link,
+  .search-icon,
+  .user-account {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .search-icon {
+    display: block;
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-left: auto;
+  }
+
+  .user-icon,
+  .user-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone-text,
+  .phone-number,
+  .acount-text,
+  .login,
+  .username {
+    display: none;
+  }
+
+  .phone-icon {
+    display: none;
+  }
+
+ 
+}

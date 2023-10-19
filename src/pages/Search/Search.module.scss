@@ -1,0 +1,28 @@
+.wrapper {
+  margin: 20px 0 30px 0;
+  height: 100%;
+  min-height: 500px;
+}
+
+.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: solid 2px #eb3e32;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 739px) {
+  .heading {
+    padding-bottom: 9px;
+  }
+
+  .heading,
+  .title {
+    font-size: 1.6rem;
+  }
+}

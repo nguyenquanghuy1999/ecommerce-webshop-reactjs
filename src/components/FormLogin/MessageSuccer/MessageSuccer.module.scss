@@ -1,0 +1,39 @@
+.wrapper {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  animation: show ease 0.3s forwards;
+}
+
+.inner {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+@keyframes show {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .inner {
+    width: 90%;
+  }
+}

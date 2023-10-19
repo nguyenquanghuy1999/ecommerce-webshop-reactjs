@@ -1,0 +1,69 @@
+.sort-product {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sort-by {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.sort {
+  font-size: 1.4rem;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #e4e1e1;
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  .caret-down {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes showSortList {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sort-list {
+  width: 180px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 6px 0;
+  animation: showSortList ease 0.2s;
+
+  .sort-item {
+    font-size: 1.4rem;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffb416;
+    }
+  }
+}
+
+@media (max-width: 739px) {
+  .sort-product {
+    margin-top: 15px;
+
+    .sort-by,
+    .sort-item {
+      font-size: 1.5rem;
+    }
+  }
+
+  .sort {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}

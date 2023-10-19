@@ -1,0 +1,38 @@
+.wrapper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 20px;
+  background: #eb3e32;
+  color: #fff;
+  padding: 5px 10px;
+}
+.list {
+  list-style: none;
+  padding: 10px;
+}
+.title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+}
+.item {
+  display: flex;
+  margin: 10px 0;
+
+  input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+.item-title {
+  font-size: 1.4rem;
+  color: #323c42;
+  margin-left: 10px;
+  cursor: pointer;
+}

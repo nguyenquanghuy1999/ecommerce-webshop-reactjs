@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 1000px;
+  margin: auto;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 740px) {
+  .content {
+    width: 95%;
+  }
+}
